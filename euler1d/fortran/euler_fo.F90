@@ -22,7 +22,7 @@ subroutine prim2con(v, u)
    u(3) = v(3) / (gam - 1.0) + 0.5 * v(1) * v(2)**2
 end subroutine prim2con
 
-! Convert primitive variables to conserved variables
+! Convert conserved variables to primitive variables
 subroutine con2prim(u, v)
    use constants
    implicit none
